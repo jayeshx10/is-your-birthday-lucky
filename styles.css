@@ -13,7 +13,7 @@ body{
 }
 
 .container{
-    height: 70vh;
+    height: auto;
     width: 60vw;
     margin: 1rem auto;
     text-align: center;
