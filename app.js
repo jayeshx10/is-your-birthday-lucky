@@ -26,6 +26,11 @@ function compareValues(sum, lucky_no){
 
 function isBirthdateLucky(){
     if(birthDate.value != "" && luckyNo.value != ""){
+        if(Number(luckyNo.value) < 0){
+            displayMsg.innerHTML = "LUCKY NUMBERS CANNOT BE NEGATIVE";
+            return;
+        }
+
         const sum = calculateSum(birthDate.value);
         compareValues(sum, luckyNo.value);
     }
